@@ -11,8 +11,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Ground
+  - Climbing
   - 
   - 
   - 
@@ -49,6 +49,9 @@ TagManager:
     locked: 0
   - name: Platforms
     uniqueID: 2198697319
+    locked: 0
+  - name: Climbing
+    uniqueID: 259640519
     locked: 0
   - name: 'Player '
     uniqueID: 4244315695
