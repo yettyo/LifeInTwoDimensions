@@ -19,7 +19,6 @@ public class PlayerMovement : MonoBehaviour
     BoxCollider2D bcol;
     float gravityScaleAtStart;
     bool isAlive = true;
-
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
