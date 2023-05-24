@@ -90,6 +90,7 @@ public class PlayerMovement : MonoBehaviour
             isAlive = false;
             anim.SetTrigger("Dying");
             rb.velocity = deathKick;
+            FindObjectOfType<GameSession>().ProcessPlayerDeath();
         }
     }
 }
