@@ -85,7 +85,7 @@ public class PlayerMovement : MonoBehaviour
         anim.SetBool("isClimbing", playerHasVerticalSpeed);
     }
 
-    void Die() {
+    public void Die() {
         if (ccol.IsTouchingLayers(LayerMask.GetMask("Enemies", "Hazards"))) {
             isAlive = false;
             anim.SetTrigger("Dying");
