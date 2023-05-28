@@ -34,8 +34,15 @@ public class GameSession : MonoBehaviour
         scoreText.text = score.ToString();
     }
     void ResetGameSession()
-    {
+    {   
         FindObjectOfType<ScenePersist>().ResetScenePersist();
+        // Set the isPlayerAlive flag to false for all AIChase scripts
+        AIChase[] aiChases = FindObjectsOfType<AIChase>();
+        foreach (AIChase aiChase in aiChases)
+        {
+            aiChase.isPlayerAlive = false;
+        }
+
         SceneManager.LoadScene(0);
         Destroy(gameObject);
     }
@@ -45,8 +52,15 @@ public class GameSession : MonoBehaviour
         scoreText.text = score.ToString();
     }
     void TakeLife()
-    {
+    {   
         playerLives--;
+        FindObjectOfType<ScenePersist>().ResetScenePersist();
+        // Set the isPlayerAlive flag to false for all AIChase scripts
+        AIChase[] aiChases = FindObjectsOfType<AIChase>();
+        foreach (AIChase aiChase in aiChases)
+        {
+            aiChase.isPlayerAlive = false;
+        }
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex);
         livesText.text = playerLives.ToString();
