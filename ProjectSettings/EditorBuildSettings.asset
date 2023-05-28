@@ -26,5 +26,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Levels/Level 6.unity
     guid: 36129a6413e076c41afce49af3ae3023
+  - enabled: 1
+    path: Assets/Levels/Finish Menu.unity
+    guid: eadd1dc7f8c3e5d49b053a00b83dd527
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: a363971eff5506048b35de8263c16c83, type: 2}

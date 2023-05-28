@@ -11,6 +11,7 @@ public class GameSession : MonoBehaviour
     [SerializeField] int score = 0;
     [SerializeField] TextMeshProUGUI livesText;
     [SerializeField] TextMeshProUGUI scoreText;
+    [SerializeField] string gameOverSceneName = "GameOverScene";
     void Awake()
     {
         int numGameSessions = FindObjectsOfType<GameSession>().Length;
@@ -42,7 +43,6 @@ public class GameSession : MonoBehaviour
         {
             aiChase.isPlayerAlive = false;
         }
-
         SceneManager.LoadScene(0);
         Destroy(gameObject);
     }

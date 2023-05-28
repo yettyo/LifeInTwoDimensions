@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - Teleporter
+  - BackgroundMusic
   layers:
   - Default
   - TransparentFX
@@ -69,4 +70,7 @@ TagManager:
     locked: 0
   - name: 'Player '
     uniqueID: 4244315695
+    locked: 0
+  - name: Score
+    uniqueID: 2439560479
     locked: 0
