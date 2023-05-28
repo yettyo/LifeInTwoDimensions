@@ -35,7 +35,7 @@ public class GameSession : MonoBehaviour
     }
     void ResetGameSession()
     {   
-        FindObjectOfType<ScenePersist>().ResetScenePersist();
+        ScenePersist.ResetScenePersist();
         // Set the isPlayerAlive flag to false for all AIChase scripts
         AIChase[] aiChases = FindObjectsOfType<AIChase>();
         foreach (AIChase aiChase in aiChases)
@@ -54,7 +54,6 @@ public class GameSession : MonoBehaviour
     void TakeLife()
     {   
         playerLives--;
-        FindObjectOfType<ScenePersist>().ResetScenePersist();
         // Set the isPlayerAlive flag to false for all AIChase scripts
         AIChase[] aiChases = FindObjectsOfType<AIChase>();
         foreach (AIChase aiChase in aiChases)
