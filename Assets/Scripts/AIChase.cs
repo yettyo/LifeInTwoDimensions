@@ -19,21 +19,14 @@ public class AIChase : MonoBehaviour
     
     void Update()
     {   
-        if (player == null) {
-            return; //exit the function if the player is null
-        }
-        if (!isPlayerAlive)
-    {
-        return;
-    }
+        if (player == null) { return; }
+        if (!isPlayerAlive) { return; }
         chaseWhenClose();
         FlipEnemyFacing();
     }
     
     void FlipEnemyFacing() {
-        if (player == null) {
-            return; //exit the function if the player is null
-        }
+        if (player == null) { return; }
         //flip when gameobject is left or right of the player
         if(transform.position.x > player.transform.position.x) {
             //return to what it was before
@@ -46,9 +39,7 @@ public class AIChase : MonoBehaviour
     }
 
     void chaseWhenClose() {
-        if (player == null) {
-            return; //exit the function if the player is null
-        }  
+        if (player == null) { return; }  
         if(Vector2.Distance(transform.position, player.transform.position) < reach) {
             distance = Vector2.Distance(transform.position, player.transform.position);
             transform.position = Vector2.MoveTowards(this.transform.position, player.transform.position, speed * Time.deltaTime);    
