@@ -1,4 +1,4 @@
-Versions
+## Versions
 
 WebGL (+play on your web browser, +no installation required, -may lack performance): Click [here](https://yettyo.github.io/LifeInTwoDimensions/WebGLBuild/index.html)
 
