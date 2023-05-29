@@ -6,7 +6,7 @@ WebGL (+play on your web browser, +no installation required, -may lack performan
 
 Windows PC (+better performance, -having to install .zip folder from my itch.io page): Click [here](https://yetty0.itch.io/lifeintwodimensions)
 
-### Controls
+## Controls
 > WASD or Arrow Keys for movement
 > 
 > Space bar for jumping
