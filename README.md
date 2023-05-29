@@ -1,4 +1,5 @@
 Versions
+
 WebGL (+play on your web browser, +no installation required, -may lack performance): Click [here](https://yettyo.github.io/LifeInTwoDimensions/WebGLBuild/index.html)
 
 Windows PC (+better performance, -having to install .zip folder from my itch.io page): Click [here](https://yetty0.itch.io/lifeintwodimensions)
